@@ -9,33 +9,86 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 
     <title>Connor Mowry</title>
+
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #B0B4B3; /* Soft neutral gray */
+        color: #343a40; /* Dark text for contrast */
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 600px;
+      }
+
+      .headshot {
+        border-radius: 15px; /* Smooth corners for a rounded rectangle */
+        width: 260px; /* Larger width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .name {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .icons a {
+        color: #343a40;
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .icons a:hover {
+        color: #007bff;
+      }
+
+      .arxiv-link {
+        font-size: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+      }
+
+      .arxiv-link:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-
-    <div class="container d-flex flex-column justify-content-center">
-      <img src="images/headshot.jpg" alt="Headshot" class="rounded mx-auto d-block" style="width:320px;height:480px;">
-      <div class="row justify-content-center">
-        <h1 class="name text-light">Connor Mowry</h1>
+    <div class="container">
+      <img src="images/headshot.jpg" alt="Connor Mowry Headshot" class="headshot">
+      <h1 class="name">Connor Mowry</h1>
+      <div class="icons">
+        <a href="resume.pdf" title="Resume">
+          <i class="far fa-file-pdf"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/crcmowry/" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/crcmowry" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:crcmowry@gmail.com" title="Email">
+          <i class="far fa-envelope"></i>
+        </a>
       </div>
-      <div class="row justify-content-center">
-          <a class="text-light" href="resume.pdf">
-            <i class="icon far fa-file-pdf"></i>
-          </a>
-          <a class="text-light" href="https://www.linkedin.com/in/crcmowry/">
-            <i class="icon fab fa-linkedin-in"></i>
-          </a>
-          <a class="text-light" href="https://github.com/crcmowry">
-            <i class="icon fab fa-github"></i>
-          </a>
-          <a class="text-light" href="mailto:crcmowry@gmail.com">
-            <i class="icon far fa-envelope"></i>
-          </a>
-      </div>
+      <a class="arxiv-link" href="https://arxiv.org/abs/2411.19449" target="_blank">
+        View my arXiv Preprint
+      </a>
     </div>
-
   </body>
 </html>
