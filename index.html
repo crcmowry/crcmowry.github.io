@@ -1,94 +1,173 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-
-    <title>Connor Mowry</title>
-
+    <title>Connor Mowry - PhD Student</title>
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
-        background-color: #B0B4B3; /* Soft neutral gray */
-        color: #343a40; /* Dark text for contrast */
-        margin: 0;
+        background-color: #ffffff;
+        color: #333;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 900px;
+      }
+      .header-section {
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 100vh;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e9ecef;
       }
-
-      .container {
-        text-align: center;
-        max-width: 600px;
-      }
-
       .headshot {
-        border-radius: 15px; /* Smooth corners for a rounded rectangle */
-        width: 260px; /* Larger width */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 20px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 200px;
+        height: auto;
+        margin-right: 30px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
       }
-
-      .name {
+      .header-info h1 {
         font-size: 2.5rem;
         font-weight: 600;
         margin-bottom: 10px;
       }
-
-      .icons a {
-        color: #343a40;
-        font-size: 1.5rem;
-        margin: 0 10px;
+      .header-info .title {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .contact-icons a {
+        color: #333;
+        font-size: 1.3rem;
+        margin-right: 15px;
         transition: color 0.3s ease;
       }
-
-      .icons a:hover {
+      .contact-icons a:hover {
         color: #007bff;
       }
-
-      .arxiv-link {
-        font-size: 1rem;
-        color: #007bff;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 15px;
+      .section {
+        margin-bottom: 40px;
       }
-
-      .arxiv-link:hover {
-        text-decoration: underline;
+      .section h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e9ecef;
+      }
+      .section p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+      .publication {
+        margin-bottom: 20px;
+      }
+      .publication .title {
+        font-weight: 600;
+        color: #333;
+      }
+      .publication .authors {
+        color: #666;
+        font-size: 0.95rem;
+      }
+      .publication .venue {
+        color: #007bff;
+        font-style: italic;
+      }
+      .interests {
+        color: #666;
+      }
+      @media (max-width: 768px) {
+        .header-section {
+          flex-direction: column;
+          text-align: center;
+        }
+        .headshot {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="images/headshot.jpg" alt="Connor Mowry Headshot" class="headshot">
-      <h1 class="name">Connor Mowry</h1>
-      <div class="icons">
-        <a href="resume.pdf" title="Resume">
-          <i class="far fa-file-pdf"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/crcmowry/" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/crcmowry" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:crcmowry@gmail.com" title="Email">
-          <i class="far fa-envelope"></i>
-        </a>
+      <!-- Header Section -->
+      <div class="header-section">
+        <img src="images/headshot.jpg" alt="Connor Mowry" class="headshot">
+        <div class="header-info">
+          <h1>Connor Mowry</h1>
+          <p class="title">PhD Student in Computer Science<br>
+          University of Illinois at Urbana-Champaign</p>
+          <div class="contact-icons">
+            <a href="mailto:cmowry2@illinois.edu" title="Email"><i class="far fa-envelope"></i></a>
+            <a href="resume.pdf" title="CV/Resume"><i class="far fa-file-pdf"></i></a>
+            <a href="https://www.linkedin.com/in/crcmowry/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/crcmowry" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
       </div>
-      <a class="arxiv-link" href="https://arxiv.org/abs/2411.19449" target="_blank">
-        View my arXiv Preprint
-      </a>
+
+      <!-- About Section -->
+      <div class="section">
+        <h2>About</h2>
+        <p>
+          I am a first-year PhD student in Computer Science at the University of Illinois at Urbana-Champaign, 
+          where I am fortunate to be advised by <a href="https://chekuri.cs.illinois.edu/">Chandra Chekuri</a> and 
+          <a href="https://karthik.ise.illinois.edu/">Karthik Chandrasekaran</a>. 
+          My research focuses on graph algorithms, network optimization, and connectivity problems.
+        </p>
+        <p>
+          I completed my BS in Computer Science at Carnegie Mellon University in 2025, where I had the privilege of 
+          working with <a href="https://www.cs.cmu.edu/~jmli/">Jason Li</a> on negative weight shortest path algorithms and 
+          <a href="https://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a> on hypothesis testing.
+        </p>
+      </div>
+
+      <!-- Research Interests -->
+      <div class="section">
+        <h2>Research Interests</h2>
+        <p class="interests">
+          Graph algorithms, network optimization, connectivity problems, combinatorial optimization
+        </p>
+      </div>
+
+      <!-- Publications Section -->
+      <div class="section">
+        <h2>Publications</h2>
+        
+        <div class="publication">
+          <p class="title">Faster Negative-Weight Shortest Paths and Directed Low-Diameter Decompositions</p>
+          <p class="authors">Jason Li, Connor Mowry, and Satish Rao</p>
+          <p class="venue">To appear in SODA 2026</p>
+        </div>
+
+        <div class="publication">
+          <p class="title">Non-iid hypothesis testing: from classical to quantum</p>
+          <p class="authors">Giacomo De Palma, Marco Fanizza, Connor Mowry, and Ryan O'Donnell</p>
+          <p class="venue">Submitted to QIP 2026</p>
+          <p><a href="https://arxiv.org/abs/2510.06147" target="_blank">arXiv:2510.06147</a></p>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section">
+        <h2>Education</h2>
+        <p>
+          <strong>University of Illinois at Urbana-Champaign</strong><br>
+          PhD in Computer Science, 2025–Present<br>
+          Advisors: Chandra Chekuri, Karthik Chandrasekaran
+        </p>
+        <p>
+          <strong>Carnegie Mellon University</strong><br>
+          BS in Computer Science, 2025<br>
+          Concentration in Algorithms and Complexity
+        </p>
+      </div>
     </div>
   </body>
 </html>
