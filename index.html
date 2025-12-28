@@ -82,6 +82,13 @@
       .interests {
         color: #666;
       }
+      .news-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .news-list li {
+        margin-bottom: 8px;
+      }
       @media (max-width: 768px) {
         .header-section {
           flex-direction: column;
@@ -105,7 +112,7 @@
           University of Illinois at Urbana-Champaign</p>
           <div class="contact-icons">
             <a href="mailto:cmowry2@illinois.edu" title="Email"><i class="far fa-envelope"></i></a>
-            <a href="resume.pdf" title="CV/Resume"><i class="far fa-file-pdf"></i></a>
+            <a href="resume.pdf" title="Resume"><i class="far fa-file-pdf"></i></a>
             <a href="https://www.linkedin.com/in/crcmowry/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/crcmowry" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
@@ -119,12 +126,14 @@
           I am a first-year PhD student in Computer Science at the University of Illinois at Urbana-Champaign, 
           where I am fortunate to be advised by <a href="https://chekuri.cs.illinois.edu/">Chandra Chekuri</a> and 
           <a href="https://karthik.ise.illinois.edu/">Karthik Chandrasekaran</a>. 
-          My research focuses on graph algorithms, network optimization, and connectivity problems.
+          My research focuses on graph algorithms, network optimization, and connectivity problems—with particular 
+          interest in developing efficient algorithms for practical applications in network design and optimization.
         </p>
         <p>
           I completed my BS in Computer Science at Carnegie Mellon University in 2025, where I had the privilege of 
           working with <a href="https://www.cs.cmu.edu/~jmli/">Jason Li</a> on negative weight shortest path algorithms and 
-          <a href="https://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a> on hypothesis testing.
+          <a href="https://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a> on hypothesis testing. I'm currently seeking 
+          Summer 2026 internships in software engineering, quantitative research, or applied research roles.
         </p>
       </div>
 
@@ -134,6 +143,17 @@
         <p class="interests">
           Graph algorithms, network optimization, connectivity problems, combinatorial optimization
         </p>
+      </div>
+
+      <!-- News Section -->
+      <div class="section">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><strong>Dec 2025:</strong> Seeking Summer 2026 internships</li>
+          <li><strong>Nov 2025:</strong> Paper accepted to QIP 2026</li>
+          <li><strong>Oct 2025:</strong> Paper accepted to SODA 2026</li>
+          <li><strong>Aug 2025:</strong> Started PhD at UIUC</li>
+        </ul>
       </div>
 
       <!-- Publications Section -->
@@ -155,6 +175,27 @@
             <span class="authors">Jason Li, Connor Mowry, and Satish Rao</span><br>
             <span class="venue">To appear in SODA 2026</span><br>
             <a href="https://arxiv.org/abs/2510.22721" target="_blank">arXiv:2510.22721</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="section">
+        <h2>Selected Projects</h2>
+        
+        <div class="publication">
+          <p>
+            <span class="title">Parallelizing Dinic's Algorithm</span><br>
+            <span class="authors">Parallelized Dinic's max-flow algorithm using OpenMP and MPI, achieving significant speedups on large graphs through BFS optimizations and 1D/2D graph decomposition</span><br>
+            <a href="https://www.andrew.cmu.edu/user/cmowry/418-final-project-website/" target="_blank">Project Website</a>
+          </p>
+        </div>
+
+        <div class="publication">
+          <p>
+            <span class="title">SAT Solver with DPLL and Heuristics</span><br>
+            <span class="authors">Implemented a SAT solver in C++ with DPLL and heuristics (DSIDS, DLIS, MOMS), evaluating performance across traceable and computationally intensive test cases</span><br>
+            <a href="https://github.com/crcmowry/SAT-Solver" target="_blank">GitHub</a>
           </p>
         </div>
       </div>
